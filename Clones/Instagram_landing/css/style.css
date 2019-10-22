@@ -1,0 +1,97 @@
+* {
+    /* border box makes it so padding does not affect width */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    background: #fff;
+    color: #999;
+}
+
+a {
+    color: rgb(76, 163, 235);
+    text-decoration: none;
+}
+
+p {
+    margin: 0.5rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+.columns .container {
+     display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.column-1-content{
+    height: 90%;
+    width: 350px;
+    margin-right: 15px;
+}
+.column-1-content img {
+    border-radius: 6px;
+}
+
+.column-2-content{
+    height: 90%;
+    margin-left: 15px;
+    width:350px;
+   text-align: center;
+}
+.upper-form-content {
+    border: 1px solid #999;
+}
+
+.lower-form-content {
+    border: 1px solid #999;
+    margin: 0.5rem 0;
+  }
+  form input {
+      display: block;
+      margin: 3px auto;
+      border: 1px solid rgb(240, 240, 240);
+      outline: none;
+      width: 80%;
+      
+  }
+  form input:focus {
+    border: 1px solid rgb(153, 153, 153);
+    border-radius: 4px;
+  }
+
+  ::placeholder {
+      color: #999;
+  }
+
+/* Buttons */
+.btn {
+    /* general button style, margin right is in case we have other buttons, they wont run into each other */
+    display: inline-block;
+    background: rgb(43, 150, 238);
+    color: #fff;
+    padding: 0.4rem 1.3rem;
+    font-size: 0.8rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    outline: none;
+    /* box-shadow: 0 1px 0 1px rgba(0,0,0, 0.45); */
+    border-radius: 2px;
+    font-weight: 600;
+}
+.social-button {
+    width: 150px;
+}
+
+.btn-icon {
+    margin-right: .8rem;
+}
